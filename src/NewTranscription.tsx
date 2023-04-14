@@ -24,7 +24,7 @@ export default function NewTranscription({onFileUploaded}: NewTranscriptOptions)
     
             return () => controller.abort();
         }
-    }, [file]);
+    }, [file, onFileUploaded]);
 
     return (
         <AudioUploader onDropAccepted={files => setFile(files[0])} />
