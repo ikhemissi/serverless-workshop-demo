@@ -15,18 +15,20 @@ export default function Transcriptions({list}: TranscriptionsOptions) {
             <TableHead>
                 <TableRow>
                     <TableCell>ID</TableCell>
-                    <TableCell align="right">File</TableCell>
+                    <TableCell align="right">Path</TableCell>
                     <TableCell align="right">Date</TableCell>
-                    <TableCell align="right">Text</TableCell>
+                    <TableCell align="right">Result</TableCell>
+                    <TableCell align="right">Status</TableCell>
                 </TableRow>
             </TableHead>
             <TableBody>
             {list?.map((transcription) => (
                 <TableRow key={transcription.id}>
                     <TableCell component="th" scope="row">{transcription.id}</TableCell>
-                    <TableCell align="right">{transcription.file}</TableCell>
-                    <TableCell align="right">{transcription.date.toLocaleString()}</TableCell>
-                    <TableCell align="right">{transcription.text}</TableCell>
+                    <TableCell align="right">{transcription.path}</TableCell>
+                    <TableCell align="right">{transcription.date?.toLocaleString()}</TableCell>
+                    <TableCell align="right">{transcription.result}</TableCell>
+                    <TableCell align="right">{transcription.status}</TableCell>
                 </TableRow>
             ))}
             </TableBody>

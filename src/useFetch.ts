@@ -26,7 +26,7 @@ export default function useFetch<ResponseDataType>(url: string, method?: 'GET' |
         })();
   
         return () => controller.abort();
-    }, [url, method, body]);
+    }, [url, method, body, controller]);
 
     return [data, loading, error, controller];
 }
