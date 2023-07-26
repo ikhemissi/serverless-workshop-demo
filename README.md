@@ -11,7 +11,8 @@ The flows can be enabled using the following environments variables:
 
 | Environment variable       | Default        | Description                                                                                                   |
 |----------------------------|----------------|---------------------------------------------------------------------------------------------------------------|
-| FILE_UPLOADING_URL         |                | File uploading url, it expects handling a multipart/form-data                                                 |
+| FILE_UPLOADING_URL         |                | Url of the file uploading endpoint. The endpoint should handle uploads in `multipart/form-data` or in binary                                                |
+| FILE_UPLOADING_FORMAT      |    `form`     | Expected data uploading format: `binary` or `form`                                                 |
 | TRANSCRIPTION_FETCHING_URL |                | Transcription fetching url                                                                                    |
 | WPS_CONNECTION_STRING      |                | Connection string for an Azure Web PubSub instance which can be used to send transcription processing updates |
-| WPS_HUB_NAME               | transcriptions | Azure Web PubSub Hub name on which processing updates will be sent                                            |
+| WPS_HUB_NAME               | `transcriptions` | Azure Web PubSub Hub name on which processing updates will be sent                                            |
