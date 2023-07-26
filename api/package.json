@@ -14,5 +14,8 @@
     "@azure/web-pubsub": "^1.1.1",
     "@types/node": "^18.x",
     "typescript": "^4.0.0"
+  },
+  "dependencies": {
+    "parse-multipart-data": "^1.5.0"
   }
 }
