@@ -3,7 +3,8 @@
   "configurations": {
     "serverless-workshop-demo": {
       "appLocation": ".",
-      "apiLocation": "http://localhost:7071",
+      "apiPort": 7071,
+      "apiLocation": "api",
       "outputLocation": "build",
       "appBuildCommand": "npm run build",
       "apiBuildCommand": "npm run build",

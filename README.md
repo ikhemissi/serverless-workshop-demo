@@ -1,6 +1,6 @@
 # Serverless workshop demo webapp
 
-This project provides a Static Web App to help learners' assess their progress on the Serverless Hands-On-Lab.
+This project provides a Static Web App to help learners assess their progress on the Serverless Hands-On-Lab.
 
 It implements the following flows:
 - Getting all existing transcriptions using a RESTful endpoint
